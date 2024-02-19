@@ -87,3 +87,17 @@ This document details the methodology, neural network architecture, and results 
 
 The model demonstrated a high degree of accuracy in the training set and solid accuracy in the validation set. However, signs of overfitting were observed, suggesting the need for additional strategies to improve the model's generalization ability.
 
+## Colab scripts and environments for testing while understanding
+On the following roots you can find the experimental colabs and you can use them in a non installed environment for no incompatibility problems.
+[Data cleaning with deep learning embeddings](https://colab.research.google.com/drive/1wBiQzPhDSzRHDKmmoPGGRTVByQsrthOn?usp=sharing)
+[Training of the algorithm based on the definitive dataset](https://colab.research.google.com/drive/1wBiQzPhDSzRHDKmmoPGGRTVByQsrthOn?usp=sharing)
+
+## Contacto
+
+Para preguntas, colaboraciones o más información, no dudes en contactarme:
+
+- **Correo Electrónico:** [lucasrebra97@gmail.com](mailto:lucasrebra97@gmail.com)
+- **LinkedIn:** [Visita mi perfil](https://www.linkedin.com/in/lucas-rey-braga-6a27b21ab/)
+
+
+
