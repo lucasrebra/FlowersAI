@@ -1,88 +1,89 @@
 
-# Documentación del Proyecto de Clasificación de Imágenes de Rosas y Girasoles
+# Project Documentation for Rose and Sunflower Image Classification
 
-## Descripción
+## Description
 
-Este proyecto utiliza técnicas de aprendizaje profundo para clasificar imágenes en dos categorías: rosas y girasoles. A través de un modelo de Red Neuronal Convolucional (CNN), se busca demostrar la capacidad de las CNNs para reconocer y diferenciar características visuales complejas en imágenes.
+This project employs deep learning techniques to classify images into two categories: roses and sunflowers. Utilizing a Convolutional Neural Network (CNN) model, the aim is to demonstrate the CNNs' ability to recognize and differentiate complex visual features in images.
 
-## Objetivos
+## Objectives
 
-- Desarrollar un modelo de clasificación de imágenes preciso y eficiente.
-- Aplicar técnicas de preprocesamiento y aumentación de datos para mejorar el rendimiento del modelo.
-- Evaluar el modelo utilizando métricas estándar como precisión, recall y F1-score.
+- Develop a precise and efficient image classification model.
+- Apply data preprocessing and augmentation techniques to enhance the model's performance.
+- Assess the model using standard metrics such as accuracy, recall, and F1-score.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - Python
-- TensorFlow y Keras para la construcción y entrenamiento de modelos de aprendizaje profundo.
-- Matplotlib para la visualización de datos.
-- Jupyter Notebook para el desarrollo y la documentación del proyecto.
+- TensorFlow and Keras for constructing and training deep learning models.
+- Matplotlib for data visualization.
+- Jupyter Notebook for project development and documentation.
 
-## Metodología
+## Methodology
 
-1. **Preprocesamiento de Datos:** Las imágenes se normalizan y redimensionan para preparar los datos para el entrenamiento.
-2. **Aumentación de Datos:** Para aumentar la diversidad del conjunto de entrenamiento, se aplican técnicas de aumentación de datos como rotación y cambio de escala.
-3. **Construcción del Modelo:** Se utiliza una arquitectura de CNN, optimizada para la clasificación de imágenes.
-4. **Entrenamiento y Validación:** El modelo se entrena con un conjunto de datos de entrenamiento y se valida su rendimiento con un conjunto de datos de validación.
-5. **Evaluación:** Se evalúa el modelo final utilizando un conjunto de datos de prueba para determinar su precisión y eficacia en la clasificación de nuevas imágenes.
+1. **Data Preprocessing:** Images are normalized and resized to prepare the data for training.
+2. **Data Augmentation:** To increase the diversity of the training dataset, data augmentation techniques like rotation and scaling are applied.
+3. **Model Construction:** A CNN architecture, optimized for image classification, is utilized.
+4. **Training and Validation:** The model is trained with a training dataset and its performance validated with a validation dataset.
+5. **Evaluation:** The final model is assessed using a test dataset to determine its accuracy and effectiveness in classifying new images.
 
-## Cómo Ejecutar el Código
+## How to Run the Code
 
-Para ejecutar este proyecto, sigue estos pasos:
+To execute this project, follow these steps:
 
-1. Clona el repositorio en tu máquina local.
-2. Asegúrate de tener instaladas todas las dependencias necesarias (`requirements.txt`).
-3. Abre el cuaderno `Rosesandsunflowers.ipynb` en Jupyter Notebook o JupyterLab.
-4. Ejecuta las celdas en orden para ver los resultados del modelo.
+1. Clone the repository to your local machine.
+2. Ensure all necessary dependencies are installed (`requirements.txt`).
+3. Open the `Rosesandsunflowers.ipynb` notebook in Jupyter Notebook or JupyterLab.
+4. Run the cells in sequence to observe the model's results.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones al proyecto son bienvenidas. Si deseas contribuir, por favor:
+Contributions to the project are welcome. If you wish to contribute, please:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tus cambios.
-3. Envía un pull request con tus cambios.
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Submit a pull request with your changes.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo [incluir tipo de licencia], lo que permite su uso, modificación y distribución bajo los términos de esa licencia.
+This project is licensed under [include type of license], which allows for its use, modification, and distribution under the terms of that license.
 
-# Documentación Avanzada del Modelo de Clasificación de Rosas y Girasoles
+# Advanced Documentation for the Rose and Sunflower Classification Model
 
-## Introducción
+## Introduction
 
-Este documento detalla la metodología, arquitectura de red neuronal y resultados obtenidos en el proyecto de clasificación de imágenes de rosas y girasoles. Se utilizaron técnicas avanzadas de aprendizaje profundo para distinguir entre estas dos categorías de imágenes.
+This document details the methodology, neural network architecture, and results obtained in the rose and sunflower image classification project. Advanced deep learning techniques were used to distinguish between these two categories of images.
 
-## Arquitectura de la Red Neuronal
+## Neural Network Architecture
 
-### Red Neuronal Convolucional Base
+### Base Convolutional Neural Network
 
-- **Preprocesamiento**:
-  - Las imágenes se redimensionaron a 180x180 píxeles.
-  - Normalización de los valores de píxeles en el rango [0, 1].
+- **Preprocessing**:
+  - Images were resized to 180x180 pixels.
+  - Pixel values were normalized to the range [0, 1].
 
-- **Arquitectura**:
-  - Capas convolucionales con activación ReLU y max pooling.
-  - Capa de aplanamiento para transición a capas densas.
-  - Capa densa con 128 neuronas y activación ReLU.
-  - Capa de salida densa con 2 neuronas (para girasoles y rosas) con activación softmax.
+- **Architecture**:
+  - Convolutional layers with ReLU activation and max pooling.
+  - A flattening layer for the transition to dense layers.
+  - A dense layer with 128 neurons and ReLU activation.
+  - A dense output layer with 2 neurons (for sunflowers and roses) with softmax activation.
 
-- **Compilación y Entrenamiento**:
-  - Optimizador: Adam.
-  - Función de pérdida: SparseCategoricalCrossentropy.
-  - Métricas: Precisión.
-  - 10 épocas, mostrando mejora continua en precisión y disminución de pérdida.
+- **Compilation and Training**:
+  - Optimizer: Adam.
+  - Loss function: SparseCategoricalCrossentropy.
+  - Metrics: Accuracy.
+  - 10 epochs, showing continuous improvement in accuracy and loss reduction.
 
-## Resultados
+## Results
 
-- **Precisión Final en Entrenamiento**: Aproximadamente 98.86%.
-- **Precisión Final en Validación**: Aproximadamente 94.77%.
+- **Final Training Accuracy**: Approximately 98.86%.
+- **Final Validation Accuracy**: Approximately 94.77%.
 
-## Mejoras Sugeridas
+## Suggested Improvements
 
-- Implementación de parada temprana (Early Stopping) para prevenir el sobreajuste.
-- Agregar capas de abandono (Dropout) y aplicar técnicas de regularización L2.
+- Implementation of early stopping to prevent overfitting.
+- Addition of dropout layers and the application of L2 regularization techniques.
 
-## Conclusión
+## Conclusion
 
-El modelo demostró un alto grado de precisión en el conjunto de entrenamiento y una sólida precisión en el conjunto de validación. Sin embargo, se observó una señal de sobreajuste, lo cual sugiere la necesidad de estrategias adicionales para mejorar la capacidad de generalización del modelo.
+The model demonstrated a high degree of accuracy in the training set and solid accuracy in the validation set. However, signs of overfitting were observed, suggesting the need for additional strategies to improve the model's generalization ability.
+
